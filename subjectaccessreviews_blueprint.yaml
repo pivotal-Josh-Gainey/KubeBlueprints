@@ -1,0 +1,60 @@
+KIND:     SubjectAccessReview
+VERSION:  authorization.k8s.io/v1
+
+DESCRIPTION:
+     SubjectAccessReview checks whether or not a user or group can perform an
+     action.
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fieldsType	<string>
+         fieldsV1	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      extra	<map[string][]string>
+      groups	<[]string>
+      nonResourceAttributes	<Object>
+         path	<string>
+         verb	<string>
+      resourceAttributes	<Object>
+         group	<string>
+         name	<string>
+         namespace	<string>
+         resource	<string>
+         subresource	<string>
+         verb	<string>
+         version	<string>
+      uid	<string>
+      user	<string>
+   status	<Object>
+      allowed	<boolean>
+      denied	<boolean>
+      evaluationError	<string>
+      reason	<string>

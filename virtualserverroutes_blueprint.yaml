@@ -1,0 +1,5 @@
+KIND:     VirtualServerRoute
+VERSION:  k8s.nginx.org/v1
+
+DESCRIPTION:
+     <empty>

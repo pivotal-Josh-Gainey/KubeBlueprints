@@ -1,0 +1,63 @@
+KIND:     Ingress
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     Ingress is a collection of rules that allow inbound connections to reach
+     the endpoints defined by a backend. An Ingress can be configured to give
+     services externally-reachable urls, load balance traffic, terminate SSL,
+     offer name based virtual hosting etc. DEPRECATED - This group version of
+     Ingress is deprecated by networking.k8s.io/v1beta1 Ingress. See the release
+     notes for more information.
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fieldsType	<string>
+         fieldsV1	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      backend	<Object>
+         serviceName	<string>
+         servicePort	<string>
+      rules	<[]Object>
+         host	<string>
+         http	<Object>
+            paths	<[]Object>
+               backend	<Object>
+                  serviceName	<string>
+                  servicePort	<string>
+               path	<string>
+      tls	<[]Object>
+         hosts	<[]string>
+         secretName	<string>
+   status	<Object>
+      loadBalancer	<Object>
+         ingress	<[]Object>
+            hostname	<string>
+            ip	<string>

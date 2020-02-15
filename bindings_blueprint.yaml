@@ -1,0 +1,48 @@
+KIND:     Binding
+VERSION:  v1
+
+DESCRIPTION:
+     Binding ties one object to another; for example, a pod is bound to a node
+     by a scheduler. Deprecated in 1.7, please use the bindings subresource of
+     pods instead.
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fieldsType	<string>
+         fieldsV1	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   target	<Object>
+      apiVersion	<string>
+      fieldPath	<string>
+      kind	<string>
+      name	<string>
+      namespace	<string>
+      resourceVersion	<string>
+      uid	<string>
