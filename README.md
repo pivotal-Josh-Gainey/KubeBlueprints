@@ -1,8 +1,8 @@
 # KubeBlueprints
 
-Kubernetes objects and attributes map
+Kubernetes objects and attributes map.
 
-Simply performed with the following little script.
+Simply created with the following little script.
 
 ```java
 mkdir kube-blueprints && cd kube-blueprints
